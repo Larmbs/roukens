@@ -54,7 +54,7 @@ fn token_generator_default_pass() {
     let generator = TokenGen::new(desired_len, DEFAULT_CHARSET.to_string());
     let token = generator.generate_token();
 
-    assert_eq!(token.len() as u32, desired_len);
+    assert_eq!(token.len(), desired_len);
 }
 
 /// Testing token cache
