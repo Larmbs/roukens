@@ -1,6 +1,6 @@
 use hashbrown::HashMap;
 use chrono::{Duration, DateTime, Utc};
-mod token_gen;
+pub mod token_gen;
 use token_gen::{TokenGen, DEFAULT_CHARSET};
 
 /// Getting current UTC time
