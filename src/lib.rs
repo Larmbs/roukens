@@ -3,6 +3,7 @@ use chrono::{Duration, DateTime, Utc};
 pub mod token_gen;
 use token_gen::{TokenGen, DEFAULT_CHARSET};
 
+#[inline]
 /// Getting current UTC time
 fn get_current_time() -> DateTime<Utc> {
     Utc::now()
